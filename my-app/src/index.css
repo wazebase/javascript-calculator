@@ -1,0 +1,10 @@
+body,html {
+    height: 100%;
+}
+body{ 
+    display: grid;
+    justify-content: center;
+     align-content: center;
+     grid-template-rows: auto min-content;
+    background-color: rgb(98, 42, 202,0.8);
+    }

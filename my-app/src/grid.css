@@ -1,0 +1,56 @@
+#calculator {
+    display: grid;
+    justify-content: center;
+   align-content: center;
+   grid-template-columns: repeat(4,1fr);
+   grid-template-rows: repeat(6,1fr);
+}
+
+#numbers {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 7;
+    grid: repeat(4,1fr) / repeat(3,1fr);
+  }
+  button {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+
+  #display {
+    display: grid;
+    justify-items: end;
+    align-items: end;
+  }
+
+  #zero {
+    grid-column-start:1;
+    grid-column-end: 3;
+  }
+  #display,#operator-row {
+    grid-column-start:1;
+    grid-column-end: 5;
+  }
+
+  #operator-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    
+  }
+  #operator-column {
+    display:grid;
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-row-start: 3;
+    grid-row-end: 7;
+  }
+  #signed {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  }
+  #signed p {
+      justify-self: center;
+  }
